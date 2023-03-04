@@ -18,4 +18,4 @@ if diskr < 0:
 elif diskr == 0:
     print (f"x1 = {amount/2 }, x2 = {amount/2}")
 else :
-        print (f"x1 = {(amount - math.sqrt(diskr))/2}, x2 = {(amount + math.sqrt(diskr))/2}")
+    print (f"x1 = {(amount - math.sqrt(diskr))/2}, x2 = {(amount + math.sqrt(diskr))/2}")
