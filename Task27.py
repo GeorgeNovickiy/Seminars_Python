@@ -8,3 +8,13 @@
 # I'm sure that the shells are sea shore shells
 
 # Output: 13
+
+inputStr = N = input("Введите исходный текст:")
+
+print (inputStr)
+
+uniqWord = set(inputStr.split())
+
+print (uniqWord)
+
+print (len(uniqWord))
