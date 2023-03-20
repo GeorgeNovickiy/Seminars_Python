@@ -7,24 +7,35 @@
 
 
 
-inStr = "a a a b c a a d c d d"
-count = {}
+# inStr = "a a a b c a a d c d d"
+# count = {}
 
-for ch in inStr.split():
-    if ch in count:
-        count[ch] +=1
+# for ch in inStr.split():
+#     if ch in count:
+#         count[ch] +=1
+#     else:
+#         count[ch] = 1
+
+
+
+# outString = ""
+
+# for key in count:
+#     for i in range(count[key]):
+#         if i == 0:
+#             outString += key + " "
+#         else: 
+#             outString += key + "_" + str(i) + "_"
+
+# print(outString)
+
+
+
+stroka = input().split()
+result = {}
+for i in stroka:
+    if i in result:
+        print(f'{i}_{result[i]}', end=' ')
     else:
-        count[ch] = 1
-
-
-
-outString = ""
-
-for key in count:
-    for i in range(count[key]):
-        if i == 0:
-            outString += key + " "
-        else: 
-            outString += key + "_" + str(i) + "_"
-
-print(outString)
+        print(i, end=' ')
+        result[i] = result.get(i, 0) + 1
